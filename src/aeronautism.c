@@ -149,38 +149,38 @@ void init_aeronautism(unsigned int w, unsigned int h){
    screenheight= h;
 
    /* load meshes */
-   terrain     = loadOBJ("data/terrain.obj");
-   balloon     = loadOBJ("data/balloon.obj");
-   monster     = loadOBJ("data/monster.obj");
-   dragon      = loadOBJ("data/dragon.obj");
-   cave        = loadOBJ("data/cave.obj");
-   tree        = loadOBJ("data/tree.obj");
-   tree_crown  = loadOBJ("data/crown.obj");
-   teleport    = loadOBJ("data/teleport.obj");
+   terrain     = loadOBJ("/usr/share/aeronautism-by-cyberneticgenetics/data/terrain.obj");
+   balloon     = loadOBJ("/usr/share/aeronautism-by-cyberneticgenetics/data/balloon.obj");
+   monster     = loadOBJ("/usr/share/aeronautism-by-cyberneticgenetics/data/monster.obj");
+   dragon      = loadOBJ("/usr/share/aeronautism-by-cyberneticgenetics/data/dragon.obj");
+   cave        = loadOBJ("/usr/share/aeronautism-by-cyberneticgenetics/data/cave.obj");
+   tree        = loadOBJ("/usr/share/aeronautism-by-cyberneticgenetics/data/tree.obj");
+   tree_crown  = loadOBJ("/usr/share/aeronautism-by-cyberneticgenetics/data/crown.obj");
+   teleport    = loadOBJ("/usr/share/aeronautism-by-cyberneticgenetics/data/teleport.obj");
    initcanvas();
 
    /* texture initialization */
-   logotex     = loadPNGTexture("data/aeronautism_logo.png");
-   ballstiltex = loadPNGTexture("data/balloon_stil.png");
-   granitetex  = loadPNGTexture("data/granite_texture.png");
-   balloontex  = loadPNGTexture("data/balloon_texture.png");
-   monstertex  = loadPNGTexture("data/monster_texture.png");
-   slatetex    = loadPNGTexture("data/swirlyslate_texture.png");
-   foresttex   = loadPNGTexture("data/forest_texture.png");
-   cloudtex    = loadPNGTexture("data/cloud_texture.png");
-   leaftex     = loadPNGTexture("data/leaf_texture.png");
-   treetex     = loadPNGTexture("data/tree_texture.png");
-   tillingtex  = loadPNGTexture("data/tilling_texture.png");
-   eyestiltex  = loadPNGTexture("data/eye_stil.png");
-   girlstiltex = loadPNGTexture("data/girl_stil.png");
-   shadowtex   = loadPNGTexture("data/shadow_texture.png");
-   greetex     = loadPNGTexture("data/greetings_texture.png");
-   teleporttex = loadPNGTexture("data/teleport_texture.png");
-   grasstex    = loadPNGTexture("data/grass_texture.png");
-   travistex   = loadPNGTexture("data/travis_texture.png");
-   shamentex   = loadPNGTexture("data/shamen_texture.png");
-   cgtex       = loadPNGTexture("data/cybernetic_texture.png");
-   functex     = loadPNGTexture("data/function_texture2.png");
+   logotex     = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/aeronautism_logo.png");
+   ballstiltex = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/balloon_stil.png");
+   granitetex  = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/granite_texture.png");
+   balloontex  = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/balloon_texture.png");
+   monstertex  = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/monster_texture.png");
+   slatetex    = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/swirlyslate_texture.png");
+   foresttex   = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/forest_texture.png");
+   cloudtex    = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/cloud_texture.png");
+   leaftex     = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/leaf_texture.png");
+   treetex     = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/tree_texture.png");
+   tillingtex  = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/tilling_texture.png");
+   eyestiltex  = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/eye_stil.png");
+   girlstiltex = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/girl_stil.png");
+   shadowtex   = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/shadow_texture.png");
+   greetex     = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/greetings_texture.png");
+   teleporttex = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/teleport_texture.png");
+   grasstex    = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/grass_texture.png");
+   travistex   = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/travis_texture.png");
+   shamentex   = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/shamen_texture.png");
+   cgtex       = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/cybernetic_texture.png");
+   functex     = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/function_texture2.png");
 
    /* particle initialization */
    leftjet     = setupParticle(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
@@ -223,30 +223,30 @@ void init_aeronautism(unsigned int w, unsigned int h){
    glMateriali(GL_FRONT, GL_SHININESS, 10);
    glMaterialfv(GL_FRONT, GL_EMISSION, amblight);
 
-   defaultvs = loadShader(GL_VERTEX_SHADER, "shaders/default.vs");
-   defaultfs = loadShader(GL_FRAGMENT_SHADER, "shaders/default.fs");
+   defaultvs = loadShader(GL_VERTEX_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/default.vs");
+   defaultfs = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/default.fs");
 
    default_sh[0]       = defaultvs;
    default_sh[1]       = defaultfs;
    default_prg         = createProgram(2, default_sh);
 
-   cave_shaders[0]     = loadShader(GL_FRAGMENT_SHADER, "shaders/cave.fs");
-   cave_shaders[1]     = loadShader(GL_VERTEX_SHADER, "shaders/moving_monster.vs");
+   cave_shaders[0]     = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/cave.fs");
+   cave_shaders[1]     = loadShader(GL_VERTEX_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/moving_monster.vs");
    cave_prg            = createProgram(2, cave_shaders);
 
-   tilling_shaders[0]  = loadShader(GL_FRAGMENT_SHADER, "shaders/pixelize.fs");
+   tilling_shaders[0]  = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/pixelize.fs");
    tilling_shaders[1]  = defaultvs;
    tilling_prg         = createProgram(2, tilling_shaders);
 
-   shadow_shaders[0]   = loadShader(GL_FRAGMENT_SHADER, "shaders/shadow.fs");
+   shadow_shaders[0]   = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/shadow.fs");
    shadow_shaders[1]   = defaultvs;
    shadow_prg          = createProgram(2, shadow_shaders);
 
-   filmbreak_sh[0]     = loadShader(GL_FRAGMENT_SHADER, "shaders/fbreak.fs");
+   filmbreak_sh[0]     = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/fbreak.fs");
    filmbreak_sh[1]     = defaultvs;
    fbreak_prg          = createProgram(2, filmbreak_sh);
 
-   wind_shaders[0]     = loadShader(GL_FRAGMENT_SHADER, "shaders/wind.fs");
+   wind_shaders[0]     = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/wind.fs");
    wind_shaders[1]     = defaultvs;
    wind_prg            = createProgram(2, wind_shaders);
 
@@ -254,19 +254,19 @@ void init_aeronautism(unsigned int w, unsigned int h){
    moving_shaders[1]   = defaultfs;
    move_prg            = createProgram(1, moving_shaders);
 
-   bunch_shaders[0]    = loadShader(GL_VERTEX_SHADER, "shaders/bunch.vs");
-   bunch_shaders[1]    = loadShader(GL_FRAGMENT_SHADER, "shaders/bunch.fs");
+   bunch_shaders[0]    = loadShader(GL_VERTEX_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/bunch.vs");
+   bunch_shaders[1]    = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/bunch.fs");
    bunch_prg           = createProgram(2, bunch_shaders);
 
-   credit_shaders[0]   = loadShader(GL_FRAGMENT_SHADER, "shaders/credits.fs");
+   credit_shaders[0]   = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/credits.fs");
    credit_shaders[1]   = defaultvs;
    credit_prg          = createProgram(2, credit_shaders);
 
-   title_shaders[0]    = loadShader(GL_FRAGMENT_SHADER, "shaders/titles.fs");
+   title_shaders[0]    = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/titles.fs");
    title_shaders[1]    = defaultvs;
    title_prg           = createProgram(2, title_shaders);
 
-   fade_shaders[0]     = loadShader(GL_FRAGMENT_SHADER, "shaders/fadeout.fs");
+   fade_shaders[0]     = loadShader(GL_FRAGMENT_SHADER, "/usr/share/aeronautism-by-cyberneticgenetics/shaders/fadeout.fs");
    fade_shaders[1]     = defaultvs;
    fade_prg            = createProgram(2, fade_shaders);
 

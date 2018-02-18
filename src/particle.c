@@ -35,7 +35,7 @@ Particle setupParticle(float start, float sx, float sy, float sz, float dx, floa
    Particle particle;
 
    /* Particle texture */
-   particletex = loadPNGTexture("data/particle_texture.png");/*TODO it should be a parameter */
+   particletex = loadPNGTexture("/usr/share/aeronautism-by-cyberneticgenetics/data/particle_texture.png");/*TODO it should be a parameter */
    glTexEnvi(GL_POINT_SPRITE, GL_COORD_REPLACE, GL_TRUE);
    glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);
 

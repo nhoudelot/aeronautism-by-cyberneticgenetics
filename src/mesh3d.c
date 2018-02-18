@@ -159,7 +159,7 @@ GLfloat *loadMonsterAttrib(){
    char line[20];
 
    ret = malloc(sizeof(GLfloat) * 5504); /* It is only for the monster, so I use this magic number */
-   attrfile = fopen("data/monster_attr.txt", "r");
+   attrfile = fopen("/usr/share/aeronautism-by-cyberneticgenetics/data/monster_attr.txt", "r");
    while(fgets(line, 20, attrfile) != NULL){
       ret[i] = atof(line);
       i++;

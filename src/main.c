@@ -15,7 +15,7 @@ int main(int argc, char *argv[]){
 
    init_aeronautism(w, h);
 
-   InitMusic("data/newfashion.ogg");
+   InitMusic("/usr/share/aeronautism-by-cyberneticgenetics/data/newfashion.ogg");
 
    BEGIN_EVENT
       draw_aeronautism();
