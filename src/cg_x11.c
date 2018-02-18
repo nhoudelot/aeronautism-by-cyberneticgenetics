@@ -56,14 +56,14 @@ void CreateScene(int width, int height){
    cg_window  = XCreateWindow(cg_display, RootWindow(cg_display, cg_visual->screen),
                            0, 0, width, height, 0, cg_visual->depth, InputOutput,
                            cg_visual->visual, CWBorderPixel | CWColormap | CWEventMask, &swa);
-   fullscreen = XInternAtom(cg_display, "_NET_WM_STATE_FULLSCREEN", False);
+   /*fullscreen = XInternAtom(cg_display, "_NET_WM_STATE_FULLSCREEN", False);
    XChangeProperty(cg_display, cg_window, XInternAtom(cg_display, "_NET_WM_STATE", False), 
                    XA_ATOM, 32, PropModeReplace,
                    (unsigned char *)&fullscreen, 1);
 
    HideCursor();
    /* Az aktuális méret lekérdezése */
-   SetScreenSize(width, height);
+  /* SetScreenSize(width, height);*/
 
    glXMakeCurrent(cg_display, cg_window, context);
    XMapWindow(cg_display, cg_window);
